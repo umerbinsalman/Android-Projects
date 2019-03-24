@@ -40,7 +40,12 @@ public class MainActivity extends AppCompatActivity {
         else
         {
             result.append("7");
-            ans=Integer.parseInt(result.getText().toString());
+            String str=result.getText().toString();
+            int index=str.indexOf('*');
+            if(index==-1)
+                ans=Integer.parseInt(str.substring(index+1));
+            else
+                temp2=Integer.parseInt(str.substring(index+1));
         }
     }
 
@@ -50,21 +55,51 @@ public class MainActivity extends AppCompatActivity {
         if(result.getText().toString().equals("0"))
         {
             result.setText("8");
-            temp2=Integer.parseInt(result.getText().toString());
+            ans=Integer.parseInt(result.getText().toString());
         }
         else
         {
             result.append("8");
             String str=result.getText().toString();
             int index=str.indexOf('*');
-            temp2=Integer.parseInt(str.substring(index+1));
+            if(index==-1)
+                ans=Integer.parseInt(str.substring(index+1));
+            else
+                temp2=Integer.parseInt(str.substring(index+1));
         }
     }
 
     public void button9(View view) {
+        TextView result=findViewById(R.id.result_text_view);
+        if(result.getText().toString().equals("0"))
+        {
+            result.setText("9");
+            ans=Integer.parseInt(result.getText().toString());
+        }
+        else
+        {
+            result.append("9");
+            String str=result.getText().toString();
+            int index=str.indexOf('*');
+            if(index==-1)
+                ans=Integer.parseInt(str.substring(index+1));
+            else
+                temp2=Integer.parseInt(str.substring(index+1));
+        }
     }
 
     public void buttonDivide(View view) {
+        TextView result=findViewById(R.id.result_text_view);
+        if(result.getText().toString().equals("0"))
+        {
+            result.setText("/");
+            op="/";
+        }
+        else
+        {
+            result.append("/");
+            op="/";
+        }
     }
 
     public void button6(View view) {
@@ -107,6 +142,10 @@ public class MainActivity extends AppCompatActivity {
         {
             ans=ans*temp2;
         }
+        else if(op.equals('/'))
+        {
+            ans=ans*temp2;
+        }
         result.setText(Integer.toString(ans));
     }
 
@@ -114,6 +153,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buttonClear(View view) {
+        TextView result=findViewById(R.id.result_text_view);
+        result.setText("");
     }
 
     public void button0(View view) {
