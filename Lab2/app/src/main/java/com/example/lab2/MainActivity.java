@@ -16,15 +16,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void DisplayToast(View v){
-        EditText txt = (EditText) findViewById(R.id.txt);
-        v = (TextView) findViewById(R.id.txt);
-        int number = Integer.valueOf(txt.getText().toString());
-        int num = Integer.valueOf(((TextView) v).getText().toString());
+        EditText txt = findViewById(R.id.txt);
+        int number = Integer.parseInt(txt.getText().toString());
         int ans = number * 3;
-        Log.i("myTag", Integer.toString(num));
         Toast.makeText(getApplicationContext(), "answer is : " + ans,Toast.LENGTH_LONG).show();
-
-
         try{
             int result = number / 0;
             Log.i("run", "answer is " + result);
