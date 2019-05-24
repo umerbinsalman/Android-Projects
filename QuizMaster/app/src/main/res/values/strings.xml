@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Quiz Master</string>
+    <string name="question_1">How many months do we have in a year?</string>
+    <string name="question_2">How many days do we have in a week</string>
+    <string name="question_3">How many days are there in a year</string>
+    <string name="question_4">What is 2+2</string>
+    <string name="question_5">How many colors are there in a rainbow</string>
+    <string name="question_6">Which day comes after Friday</string>
+    <string name="question_7">How many letters are there in the English alphabet</string>
+    <string name="question_8">We smell with our</string>
+    <string name="question_9">Which planet is known as the Red Planet</string>
+</resources>
