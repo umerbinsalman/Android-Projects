@@ -32,14 +32,14 @@ public class Result extends AppCompatActivity {
         setContentView(R.layout.activity_result);
         Bundle bundle=getIntent().getExtras();
         answer1=bundle.getString("answer1");
-//        answer2=bundle.getString("answer2");
-//        answer3=bundle.getString("answer3");
-//        answer4=bundle.getString("answer4");
-//        answer5=bundle.getString("answer5");
-//        answer6=bundle.getString("answer6");
-//        answer7=bundle.getString("answer7");
-//        answer8=bundle.getString("answer8");
-//        answer9=bundle.getString("answer9");
+        answer2=bundle.getString("answer2");
+        answer3=bundle.getString("answer3");
+        answer4=bundle.getString("answer4");
+        answer5=bundle.getString("answer5");
+        answer6=bundle.getString("answer6");
+        answer7=bundle.getString("answer7");
+        answer8=bundle.getString("answer8");
+        answer9=bundle.getString("answer9");
         calculateResult();
     }
 
@@ -47,22 +47,22 @@ public class Result extends AppCompatActivity {
     {
         if(ans1.equals(answer1))
             count++;
-//        if(ans2.equals(answer2))
-//            count++;
-//        if(ans3.equals(answer3))
-//            count++;
-//        if(ans4.equals(answer4))
-//            count++;
-//        if(ans5.equals(answer5))
-//            count++;
-//        if(ans6.equals(answer6))
-//            count++;
-//        if(ans7.equals(answer7))
-//            count++;
-//        if(ans8.equals(answer8))
-//            count++;
-//        if(ans9.equals(answer9))
-//            count++;
+        if(ans2.equals(answer2))
+            count++;
+        if(ans3.equals(answer3))
+            count++;
+        if(ans4.equals(answer4))
+            count++;
+        if(ans5.equals(answer5))
+            count++;
+        if(ans6.equals(answer6))
+            count++;
+        if(ans7.equals(answer7))
+            count++;
+        if(ans8.equals(answer8))
+            count++;
+        if(ans9.equals(answer9))
+            count++;
         result=findViewById(R.id.result);
         result.setText(Integer.toString(count));
     }

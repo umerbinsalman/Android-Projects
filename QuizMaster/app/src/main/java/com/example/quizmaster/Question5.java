@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 public class Question5 extends AppCompatActivity {
     String answer1;
@@ -30,6 +31,10 @@ public class Question5 extends AppCompatActivity {
         radio2=findViewById(R.id.q5radio2);
         radio3=findViewById(R.id.q5radio3);
         radio4=findViewById(R.id.q5radio4);
+        Toast.makeText(getApplicationContext(),answer1,Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),answer2,Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),answer3,Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),answer4,Toast.LENGTH_LONG).show();
     }
 
     public void question6(View view) {

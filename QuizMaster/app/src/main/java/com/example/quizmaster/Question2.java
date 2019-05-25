@@ -25,6 +25,7 @@ public class Question2 extends AppCompatActivity {
         radio2=findViewById(R.id.q2radio2);
         radio3=findViewById(R.id.q2radio3);
         radio4=findViewById(R.id.q2radio4);
+        Toast.makeText(getApplicationContext(),answer1,Toast.LENGTH_LONG).show();
     }
 
     public void question3(View view) {
