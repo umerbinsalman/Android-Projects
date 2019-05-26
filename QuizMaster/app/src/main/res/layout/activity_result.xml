@@ -6,13 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".Result"
     android:orientation="vertical"
-    android:background="#EE6C87BB">
+    android:background="@color/colorPrimary"
+
+    >
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Your Result:"
+        android:text="Your Final Score:"
+        android:textColor="#ffffff "
         android:textSize="40sp"
         android:layout_marginTop="150dp"/>
 
@@ -22,6 +25,7 @@
         android:id="@+id/result"
         android:gravity="center"
         android:text="result"
+        android:textColor="#ffffff "
         android:textSize="40sp"
         android:layout_marginTop="30dp"/>
 

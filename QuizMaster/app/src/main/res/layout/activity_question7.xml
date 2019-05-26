@@ -6,13 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".Question7"
     android:orientation="vertical"
-    android:background="#EE6C87BB">
+    android:background="@color/colorPrimary">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/question_7"
         android:textSize="32sp"
+        android:textColor="#ffffff "
         android:layout_margin="20dp"/>
 
     <RadioGroup
@@ -23,21 +24,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="23"
+            android:textColor="#ffffff "
             android:id="@+id/q7radio1"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="22"
+            android:textColor="#ffffff "
             android:id="@+id/q7radio2"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="26"
+            android:textColor="#ffffff "
             android:id="@+id/q7radio3"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="32"
+            android:textColor="#ffffff "
             android:id="@+id/q7radio4"/>
     </RadioGroup>
 
